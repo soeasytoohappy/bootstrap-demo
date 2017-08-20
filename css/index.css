@@ -39,7 +39,9 @@ body{
     color: purple;
     font-size: 15px;
 }
-
+.carousel-inner .item img{
+    height: 360px;
+}
 
 /*媒体查询*/
 @media screen  and  (max-width: 750px){
