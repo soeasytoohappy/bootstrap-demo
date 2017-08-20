@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--兼容IE,自动使用IE最高版本-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端必须-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo of Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!--头部-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">美女联盟</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">简介 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">综述</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">产品 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">aaa</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">bbb</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">ccc</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">ddd</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">eee</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">关于</a></li>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">服务</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--轮播图-->
+<div id="carousel-example-generic" class="carousel slide"  data-ride="carousel"  >
+    <!-- 指示器, 点 -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- item 内容 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/nav_01.jpg" alt="...">
+        </div>
+        <div class="item">
+            <img src="images/nav_02.jpg" alt="...">
+        </div>
+        <div class="item">
+            <img src="images/nav_03.jpg" alt="...">
+        </div>
+    </div>
+
+    <!-- 上一张  下一张 -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--内容-->
+<div id="main">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img class="img-circle" src="images/01.jpg" alt="">
+                <h3>小月月</h3>
+                <p>她的梦想是用"内在改变世界",励志做"中国的月亮女神"。</p>
+                <button class="btn btn-success btn-sm">立即咨询</button>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle" src="images/02.jpg" alt="">
+                <h3>潘多拉</h3>
+                <p>梦想是打造完美身材,最终"征服高富帅,秒杀白富美"。</p>
+                <button class="btn btn-success btn-sm">立即咨询</button>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle" src="images/05.jpg" alt="">
+                <h3>莉莉丝</h3>
+                <p>梦想是设计出能改变世界的游戏,成为广大男生心目中的女神。</p>
+                <button class="btn btn-success btn-sm">立即咨询</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--标签页-->
+<div>
+    <!-- 选项卡 -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#ios" aria-controls="home" role="tab" data-toggle="tab">小月月</a></li>
+        <li role="presentation"><a href="#android" aria-controls="profile" role="tab" data-toggle="tab">潘多拉</a></li>
+        <li role="presentation"><a href="#html" aria-controls="messages" role="tab" data-toggle="tab">莉莉丝</a></li>
+    </ul>
+
+    <!-- 选项卡的内容 -->
+    <div class="tab-content">
+        <div role="tabpanel-ios" class="tab-pane active" id="ios">
+            <!--栅格系统-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3> 小月月  <span>史上最温柔</span></h3>
+                        <p class="lead">她的梦想是用"内在改变世界",励志做"中国的月亮女神"。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="img/safari-logo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div role="tabpanel-android" class="tab-pane" id="android">
+            <!--栅格系统-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="img/firefox-logo.jpg" alt="">
+                    </div>
+
+                    <div class="col-md-8">
+                        <h3> 潘多拉  <span>最酷的女神</span></h3>
+                        <p class="lead">梦想是通过自身魅力改变世界,终极目标:"征服高富帅,秒杀白富美"。</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div role="tabpanel-html" class="tab-pane" id="html">
+            <!--栅格系统-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3> 莉莉丝  <span>史上最美女神</span></h3>
+                        <p class="lead">梦想是设计出能改变世界的游戏,成为广大男生心目中的女神。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="img/ie-logo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+<!--底部-->
+<footer>
+    <p class="pull-left">&copy;2017 我看行!</p>
+    <a class="pull-right" href="#">回到顶部</a>
+</footer>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+<script src="lib/jquery/jquery-3.2.0.js"></script>
+
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
